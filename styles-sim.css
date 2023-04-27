@@ -1,0 +1,99 @@
+/* استدعاء خط Cairo من خطوط قوقل */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+/* تنسيق العناصر الأساسية */
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f2f2f2;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+header {
+  background-color: lavender;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-info img {
+  max-width: 200px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.store-info h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  margin: 30px auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+li {
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price {
+    font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9b59b6;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+    font-family: 'Cairo', sans-serif;
+  text-decoration: none;
+  background-color: #9b59b6;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #8e44ad;
+}

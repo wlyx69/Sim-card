@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>أسعار الشرائح</title>
+	<link rel="stylesheet" type="text/css" href="styles-sim.css">
+    
+	<script>
+		function openWhatsApp(packageName) {
+			var whatsappURL = 'https://wa.me/966566881080?text=السلام عليكم ورحمة الله وبركاته انا جيتك من طرف الوليد و ابغى ' + encodeURIComponent(packageName);
+			window.open(whatsappURL, '_blank');
+		}
+	</script>
+</head>
+<body>
+    
+
+	<header>
+		<div class="store-info">
+			<img src="stor-logo.png" alt="Aradi Al Nada Communications">
+			<h1></h1>
+		</div>
+	</header>
+
+	<main>
+		
+        <h2 id="animated-text">المنتجات المتاحة للبيع</h2>
+        <script>
+            var textWrapper = document.querySelector('#animated-text');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+            anime.timeline({loop: true})
+              .add({
+                targets: '.letter',
+                translateY: [-50, 0],
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 2000,
+                delay: (el, i) => 30 * i
+              }).add({
+                targets: '.letter',
+                translateY: [0, 50],
+                opacity: [1, 0],
+                easing: "easeInExpo",
+                duration: 2000,
+                delay: (el, i) => 30 * i
+              });
+        </script>
+        <h3>  ارجو عدم حذف الرسالة المرفقة مع الواتساب لكي تحصل على الخصم
+        </h3>
+        <h3> جميع الاسعار شاملة الضريبة والخصم </h3>
+		<ul>
+			<li>
+				<h3>شريحة 3 شهور لا محدود</h3>
+				<p class="price">490 ريال</p>
+				<p class="description">انترنت بدون استخدام عادل</p>
+				<button onclick="openWhatsApp('شريحة 3 شهور لا محدود')">اشترِ الآن</button>
+			</li>
+			<li>
+				<h3>شريحة 500 قيقا 6 شهور</h3>
+				<p class="price">390 ريال</p>
+				<p class="description"></p>
+				<button onclick="openWhatsApp('شريحة 500 قيقا 6 شهور')">اشترِ الآن</button>
+			</li>
+			<li>
+				<h3>شريحة 300 قيقا 3 شهور</h3>
+				<p class="price">250 ريال</p>
+				<p class="description"></p>
+				<button onclick="openWhatsApp('شريحة 300 قيقا 3 شهور')">اشترِ الآن</button>
+			</li>
+			<li>
+				<h3>شريحة 100 قيقا 3 شهور</h3>
+				<p class="price">190 ريال</p>
+				<p class="description"></p>
+				<button onclick="openWhatsApp('شريحة 100 قيقا 3 شهور')">اشترِ الآن</button>
+			</li>
+			<li>
+				<h3>شريحة شهر لا محدود</h3>
+				<p class="price">190 ريال</p>
+                <p class="description">انترنت بدون استخدام عادل</p>
+				<button onclick="openWhatsApp('شريحة شهر لا محدود')">اشترِ الآن</button>
+			</li>
+			<li>
+				<h3>شريحة 100+19 قيقا شهر</h3>
+				<p class="price">110 ريال</p>
+				<p class="description"></p>
+				<button onclick="openWhatsApp('شريحة 100+19 قيقا شهر')">اشترِ الآن</button>
+			</li>
+			<li>
+				<h3>شريحة 25+25 قيقا شهر</h3>
+				<p class="price">85 ريال</p>
+				<p class="description"></p>
+				<button onclick="openWhatsApp('شريحة 25+25 قيقا شهر')">اشترِ الآن</button>
+			</li>
+		</ul>
+	</main>
+</body>
+</html>
+
